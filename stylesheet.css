@@ -1,0 +1,110 @@
+/* === Base tag selector === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+/* === ID: site-header === */
+#site-header {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  text-align: center;
+  padding: 48px 24px 32px;   /* box model: padding */
+  border-bottom: 4px solid #4a90d9; /* box model: border */
+}
+
+#site-header h1 {
+  font-size: 2.6rem;
+  margin-bottom: 8px;
+}
+
+#site-header nav {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+#site-header nav a {
+  color: #a8c8f0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* === Class: subtitle === */
+.subtitle {
+  font-size: 1.1rem;
+  color: #a0b8cc;
+  margin: 0;
+}
+
+/* === Class: section === */
+.section {
+  max-width: 860px;
+  margin: 48px auto;
+  padding: 32px 40px;        /* box model: padding */
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+}
+
+/* === Class: card (reused multiple times) === */
+.card {
+  background: #f0f5ff;
+  border-left: 4px solid #4a90d9;
+  border-radius: 6px;
+  padding: 20px 24px;        /* box model: padding */
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin-bottom: 6px;
+  color: #1a1a2e;
+}
+
+/* === <a> tag base style === */
+a {
+  color: #4a90d9;
+  text-decoration: none;
+}
+
+/* === Hover color change on <a> === */
+a:hover {
+  color: #e94560;
+  text-decoration: underline;
+}
+
+/* === Profile image === */
+.profile-img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  margin-right: 28px;
+  flex-shrink: 0;
+  border: 3px solid #4a90d9; /* box model: border */
+}
+
+.content-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* === ID: site-footer === */
+#site-footer {
+  text-align: center;
+  padding: 24px;             /* box model: padding */
+  background-color: #1a1a2e;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 48px;
+}
