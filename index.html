@@ -3,159 +3,251 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personal website for Fahad Qureshi, UT Austin ECE student showcasing projects, skills, and experience." />
+  <meta name="description" content="Fahad Qureshi — Electrical & Computing Engineering student at UT Austin. Full stack developer with experience in React, Flask, Python, and embedded systems." />
   <title>Fahad Qureshi</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheet.css" />
 </head>
 <body>
 
-  <header id="site-header">
-    <div class="header-inner">
-      <div class="initials-badge">FQ</div>
-      <div class="header-text">
-        <h1>Fahad Qureshi</h1>
-        <p class="subtitle">Electrical & Computing Engineering @ UT Austin</p>
-        <p class="tagline">Embedded Systems · Full-Stack · Machine Learning</p>
+  <!-- HERO -->
+  <div id="hero">
+    <div id="hero-content">
+      <p class="hero-tag">ECE @ UT Austin</p>
+      <h1>Fahad Qureshi</h1>
+      <p class="hero-sub">Full Stack Developer · Embedded Systems · ML</p>
+      <div class="hero-links">
+        <a href="mailto:mohammedfahadq25@gmail.com" class="hero-btn">Email Me</a>
+        <a href="https://linkedin.com/in/fahad-qureshi-9a35a3340" target="_blank" class="hero-btn outline">LinkedIn</a>
       </div>
     </div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  </div>
 
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ABOUT -->
   <div id="about" class="section">
-    <h2><span class="section-label">01 /</span> About Me</h2>
-    <div class="content-row">
-      <div class="profile-badge">FQ</div>
-      <div class="about-text">
+    <h2 class="section-title"><span class="accent">/</span> About Me</h2>
+    <div class="about-grid">
+      <div>
         <p>
-          Hi — I'm Fahad, a junior studying Electrical & Computing Engineering at UT Austin (GPA 3.3).
-          I'm passionate about building things that sit at the intersection of hardware and software —
-          from FPGA-based digital systems to full-stack web apps and machine learning pipelines.
+          I'm a junior studying Electrical and Computing Engineering at the University of Texas at Austin
+          (GPA: 3.3/4.0), graduating May 2027. I love building things end-to-end — from low-level
+          embedded firmware in ARM Assembly and C, all the way up to full-stack web apps with React and Flask.
         </p>
         <p>
-          I've shipped production software as a Lead Full Stack Developer, built embedded systems
-          in ARM Assembly and C, and architected real-time multiplayer game servers in Java.
-          When I'm not coding, I'm probably exploring Austin or thinking about the next project.
+          I've shipped production software as a Lead Full Stack Developer, built ML-powered platforms,
+          and designed hardware on FPGAs — and I'm always looking for the next hard problem to solve.
         </p>
-        <div class="skills-grid">
-          <div class="skill-group">
-            <span class="skill-label">Languages</span>
-            <span>C · C++ · Python · JavaScript · Java · Verilog · SQL · ARM Assembly</span>
-          </div>
-          <div class="skill-group">
-            <span class="skill-label">Frameworks</span>
-            <span>React · Flask · Node.js · REST APIs · SQLAlchemy · MongoDB</span>
-          </div>
-          <div class="skill-group">
-            <span class="skill-label">Tools</span>
-            <span>Git · AWS · Netlify · Linux · FPGA · MATLAB · KiCad · LTspice</span>
-          </div>
+        <div class="pill-row">
+          <span class="pill">UT Austin '27</span>
+          <span class="pill">GPA 3.3</span>
+          <span class="pill">Austin, TX</span>
+          <span class="pill">817-908-5943</span>
+        </div>
+      </div>
+      <div class="about-img-wrap">
+        <img
+          src="https://placehold.co/200x200/0d0d0d/c084fc?text=FQ"
+          alt="Fahad Qureshi"
+          class="profile-img"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div id="skills" class="section section-dark">
+    <h2 class="section-title"><span class="accent">/</span> Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <div class="pill-row">
+          <span class="pill">C / C++</span>
+          <span class="pill">Python</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">Java</span>
+          <span class="pill">SQL</span>
+          <span class="pill">Verilog</span>
+          <span class="pill">ARM Assembly</span>
+          <span class="pill">HTML/CSS</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Frameworks & Tools</h3>
+        <div class="pill-row">
+          <span class="pill">React</span>
+          <span class="pill">Flask</span>
+          <span class="pill">Node.js</span>
+          <span class="pill">REST APIs</span>
+          <span class="pill">SQLAlchemy</span>
+          <span class="pill">MongoDB</span>
+          <span class="pill">AWS</span>
+          <span class="pill">Git</span>
+          <span class="pill">Netlify</span>
+          <span class="pill">Linux</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Hardware & Platforms</h3>
+        <div class="pill-row">
+          <span class="pill">FPGA</span>
+          <span class="pill">Xilinx Vivado</span>
+          <span class="pill">KiCad</span>
+          <span class="pill">LTspice</span>
+          <span class="pill">MATLAB</span>
+          <span class="pill">Microcontrollers</span>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- EXPERIENCE -->
   <div id="experience" class="section">
-    <h2><span class="section-label">02 /</span> Experience</h2>
+    <h2 class="section-title"><span class="accent">/</span> Experience</h2>
 
-    <div class="exp-card">
-      <div class="exp-header">
-        <div>
-          <h3>Lead Full Stack Developer</h3>
-          <p class="exp-company">Texas MSA</p>
-        </div>
-        <span class="exp-date">Dec 2024 – Sep 2025 · Austin, TX</span>
-      </div>
-      <ul>
-        <li>Designed and launched the official Texas MSA website — improved page load speed by <strong>40%</strong> through asset optimization and responsive layout engineering.</li>
-        <li>Architected a modular content system decoupling presentation from data, cutting maintenance time by <strong>30%</strong> and enabling non-technical members to ship updates independently.</li>
-        <li>Automated CI/CD pipelines with Netlify, reducing deployment turnaround by <strong>75%</strong> and eliminating all manual release steps.</li>
-      </ul>
-    </div>
+    <div class="timeline">
 
-    <div class="exp-card">
-      <div class="exp-header">
-        <div>
-          <h3>Software Developer</h3>
-          <p class="exp-company">Makka Auto Sales</p>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-body">
+          <div class="timeline-header">
+            <div>
+              <h3>Lead Full Stack Developer</h3>
+              <p class="timeline-org">Texas MSA</p>
+            </div>
+            <span class="timeline-date">Dec 2024 – Sep 2025</span>
+          </div>
+          <ul>
+            <li>Designed and launched the official Texas MSA website, improving page load speed by <strong>40%</strong> through asset optimization and responsive layout engineering.</li>
+            <li>Architected a modular content system reducing maintenance time by <strong>30%</strong> and enabling non-technical members to ship updates independently.</li>
+            <li>Automated CI/CD pipelines with Netlify, cutting deployment turnaround by <strong>75%</strong>.</li>
+          </ul>
         </div>
-        <span class="exp-date">May 2024 – Jul 2024 · Dallas, TX</span>
       </div>
-      <ul>
-        <li>Built a web-based appointment scheduling system from scratch, replacing a manual phone process and improving booking efficiency by <strong>30%</strong>.</li>
-        <li>Engineered a C++ database system centralizing vehicle inventory, sales, and customer records — eliminating fragmented spreadsheets.</li>
-        <li>Implemented GitHub Actions and AWS deployment pipelines with automated test gates, cutting release cycles by <strong>75%</strong>.</li>
-      </ul>
-    </div>
 
-    <div class="exp-card">
-      <div class="exp-header">
-        <div>
-          <h3>Undergraduate ECE Teaching Assistant</h3>
-          <p class="exp-company">Cockrell School of Engineering · UT Austin</p>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-body">
+          <div class="timeline-header">
+            <div>
+              <h3>Software Developer</h3>
+              <p class="timeline-org">Makka Auto Sales</p>
+            </div>
+            <span class="timeline-date">May 2024 – Jul 2024</span>
+          </div>
+          <ul>
+            <li>Built a web-based appointment scheduling system replacing a manual phone process, improving booking efficiency by <strong>30%</strong>.</li>
+            <li>Engineered a C++ database system centralizing vehicle inventory, sales, and customer records.</li>
+            <li>Implemented GitHub Actions and AWS pipelines, accelerating release cycles by <strong>75%</strong>.</li>
+          </ul>
         </div>
-        <span class="exp-date">Aug 2025 – Dec 2025 · Austin, TX</span>
       </div>
-      <ul>
-        <li>Mentored 30+ first-year ECE students on computing fundamentals, debugging workflows, and engineering problem-solving.</li>
-        <li>Collaborated with faculty to redesign course assignments and rubrics, increasing student engagement by an estimated <strong>20%</strong>.</li>
-      </ul>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-body">
+          <div class="timeline-header">
+            <div>
+              <h3>Undergraduate ECE Teaching Assistant</h3>
+              <p class="timeline-org">Cockrell School of Engineering, UT Austin</p>
+            </div>
+            <span class="timeline-date">Aug 2025 – Dec 2025</span>
+          </div>
+          <ul>
+            <li>Mentored 30+ first-year ECE students on computing fundamentals, debugging, and engineering problem-solving.</li>
+            <li>Collaborated with faculty to redesign assignments and rubrics, increasing student engagement by an estimated <strong>20%</strong>.</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </div>
 
-  <div id="projects" class="section">
-    <h2><span class="section-label">03 /</span> Projects</h2>
+  <!-- PROJECTS -->
+  <div id="projects" class="section section-dark">
+    <h2 class="section-title"><span class="accent">/</span> Projects</h2>
+    <div class="projects-grid">
 
-    <div class="card">
-      <div class="card-header">
-        <h3>NBA Player Performance Predictor</h3>
-        <div class="tech-tags">
-          <span>Python</span><span>Flask</span><span>React</span><span>ML</span><span>SQL</span>
+      <div class="card">
+        <div class="card-top">
+          <h3>NBA Player Performance Predictor</h3>
+          <div class="tag-row">
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">React</span>
+            <span class="tag">ML</span>
+            <span class="tag">SQL</span>
+          </div>
         </div>
+        <p>End-to-end ML prediction platform integrating a Flask REST backend, SQLAlchemy-managed database, and a React analytics dashboard to forecast NBA player points with <strong>&gt;85% model accuracy</strong>.</p>
+        <a href="https://github.com" target="_blank" class="card-link">View Project →</a>
       </div>
-      <p>End-to-end machine learning platform forecasting NBA player points with <strong>&gt;85% model accuracy</strong>. Integrates a Flask REST backend, SQLAlchemy database, and React analytics dashboard with real-time inference through RESTful API endpoints.</p>
-      <a href="https://github.com" target="_blank">View on GitHub →</a>
-    </div>
 
-    <div class="card">
-      <div class="card-header">
-        <h3>Mastermind — Multiplayer Web Game</h3>
-        <div class="tech-tags">
-          <span>Java</span><span>React</span><span>WebSockets</span><span>Multithreading</span>
+      <div class="card">
+        <div class="card-top">
+          <h3>Mastermind — Multiplayer Web Game</h3>
+          <div class="tag-row">
+            <span class="tag">Java</span>
+            <span class="tag">React</span>
+            <span class="tag">WebSockets</span>
+            <span class="tag">Multithreading</span>
+          </div>
         </div>
+        <p>Real-time multiplayer game with a multi-threaded Java server managing concurrent sessions via custom WebSocket protocol. Features real-time chat, turn indicators, and interactive color-peg selection.</p>
+        <a href="https://github.com" target="_blank" class="card-link">View Project →</a>
       </div>
-      <p>Full-stack real-time multiplayer game with a multi-threaded Java server managing concurrent player sessions via custom WebSocket protocol. Features real-time chat, turn indicators, and interactive color-peg selection on a responsive React frontend.</p>
-      <a href="https://github.com" target="_blank">View on GitHub →</a>
-    </div>
 
-    <div class="card">
-      <div class="card-header">
-        <h3>EE461L Hardware Resource Manager</h3>
-        <div class="tech-tags">
-          <span>React</span><span>Flask</span><span>REST APIs</span><span>SQL</span>
+      <div class="card">
+        <div class="card-top">
+          <h3>EE461L Hardware Resource Manager</h3>
+          <div class="tag-row">
+            <span class="tag">React</span>
+            <span class="tag">Flask</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Material UI</span>
+          </div>
         </div>
+        <p>Full-stack web application for hardware set management — users can create projects, join teams, and check hardware in and out. Built with a React frontend, Flask REST backend, and a fully component-driven UI.</p>
+        <a href="https://github.com" target="_blank" class="card-link">View Project →</a>
       </div>
-      <p>Full-stack web application for hardware resource management built with React and Flask for EE461L. Supports multi-user resource booking, live availability tracking, and a clean dashboard interface backed by a relational database.</p>
-      <a href="https://github.com" target="_blank">View on GitHub →</a>
-    </div>
 
+      <div class="card">
+        <div class="card-top">
+          <h3>FPGA Multifunctional Stopwatch</h3>
+          <div class="tag-row">
+            <span class="tag">Verilog</span>
+            <span class="tag">FPGA</span>
+            <span class="tag">Xilinx Vivado</span>
+          </div>
+        </div>
+        <p>Programmable FPGA-based stopwatch using RTL design and dataflow modeling. Verified with testbenches and deployed on an Artix-7 FPGA.</p>
+        <a href="https://github.com" target="_blank" class="card-link">View Project →</a>
+      </div>
+
+    </div>
   </div>
 
+  <!-- CONTACT -->
   <div id="contact" class="section">
-    <h2><span class="section-label">04 /</span> Contact</h2>
-    <p class="contact-intro">I'm always open to new opportunities, collaborations, or just a good conversation about engineering.</p>
-    <div class="contact-links">
-      <a href="/cdn-cgi/l/email-protection#2e4341464f43434b4a484f464f4a5f1c1b6e49434f4742004d4143" class="contact-btn">✉ <span class="__cf_email__" data-cfemail="4a2725222b27272f2e2c2b222b2e3b787f0a2d272b232664292527">[email&#160;protected]</span></a>
-      <a href="https://linkedin.com/in/fahad-qureshi-9a35a3340" target="_blank" class="contact-btn">↗ LinkedIn</a>
-      <a href="tel:8179085943" class="contact-btn">📞 817-908-5943</a>
+    <h2 class="section-title"><span class="accent">/</span> Contact</h2>
+    <p>I'm always open to new opportunities, collaborations, or just a conversation. Reach out anytime.</p>
+    <div class="contact-row">
+      <a href="mailto:mohammedfahadq25@gmail.com" class="hero-btn">mohammedfahadq25@gmail.com</a>
+      <a href="https://linkedin.com/in/fahad-qureshi-9a35a3340" target="_blank" class="hero-btn outline">LinkedIn</a>
     </div>
   </div>
 
-  <foo
+  <!-- FOOTER -->
+  <footer id="site-footer">
+    <p>© 2025 Fahad Qureshi · ECE @ UT Austin</p>
+  </footer>
+
+</body>
+</html>
